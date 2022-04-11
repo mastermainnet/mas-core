@@ -11,7 +11,7 @@ go-ethereum-release/1.10
 ```shell
 mkdir {{folder}}
 ```
-3. Node installation (**reqeust masnet developer )
+3. Node installation (**reqeust 'masnet.json' file to masnet developer )
 ```shell
 geth --datadir {{folder}}/ init masnet.json 
 ```
@@ -22,7 +22,7 @@ geth --datadir node/ --ipcpath {{folder}}/{{folder}}.ipc --port 30301 --networki
 #rpcHttp : --http --http.addr 0.0.0.0 --http.port 8545 --http.api admin,debug,web3,eth,txpool,personal,clique,net --http.corsdomain '*' <br>
 #rpcWs : --ws --ws.addr 0.0.0.0 --ws.port 8546 --ws.api admin,debug,web3,eth,txpool,personal,clique,net --ws.origins '*'
 
-5. join to masnet (** reqeust masnet developer ) 
+5. join to masnet (** reqeust 'enode infomaiton' to masnet developer ) 
 ```shell
 admin_addPeer enode:... 
 ```
