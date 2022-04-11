@@ -1,3 +1,20 @@
+## Masnet 
+Ethereum-based POA mainnet
+
+GO-VERSION=1.17.5<br>
+go-ethereum-release/1.10
+
+## How to install Node
+
+1. Install Go-Ethereum according to the official document below.
+2. mkdir {{folder}}
+3. geth --datadir {{folder}}/ init masnet.json (**reqeust masnet developer )
+4. geth --datadir node/ --ipcpath {{folder}}/{{folder}}.ipc --port 30301 --networkid 220315 --syncmode full --nodiscover 
+#rpcHttp : --http --http.addr 0.0.0.0 --http.port 8545 --http.api admin,debug,web3,eth,txpool,personal,clique,net --http.corsdomain '*' 
+#rpcWs : --ws --ws.addr 0.0.0.0 --ws.port 8546 --ws.api admin,debug,web3,eth,txpool,personal,clique,net --ws.origins '*'
+5. admin_addPeer enode:... (** reqeust masnet developer ) 
+
+
 ## Go Ethereum
 
 Official Golang implementation of the Ethereum protocol.
